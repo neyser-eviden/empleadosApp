@@ -9,11 +9,11 @@ import { ServicioEmpleadosService } from '../servicio-empleados.service';
 export class CaracteristicasEmpleadoCComponent {
 
   @Output() caracteristicasEmpleados = new EventEmitter<string>();
-  constructor(private miServicio:ServicioEmpleadosService){
-  }
+  
+  //constructor(private miServicio:ServicioEmpleadosService){}
 
   agregarCaracteristicas(value: string){
-    this.miServicio.muestraMensaje(value);
+    //this.miServicio.muestraMensaje(value);
     this.caracteristicasEmpleados.emit(value);
   }
 

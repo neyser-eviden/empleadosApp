@@ -6,9 +6,7 @@ export class Empleado{
         this.cargo = cargo;
         this.salario = salario;
     }
-
-
-
+    
     nombre: string = "";
     apellido: string = "";
     cargo: string = "";
