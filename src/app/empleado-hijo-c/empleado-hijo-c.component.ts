@@ -11,4 +11,10 @@ export class EmpleadoHijoCComponent {
   @Input() empleadoPadre:Empleado;
   @Input() iPadre:number;
 
+  arrayCaracteristicas:string[] = [];
+
+  agregarCaracteristica(nuevaCaracteristica: string) {
+    this.arrayCaracteristicas.push(nuevaCaracteristica);
+  }
+
 }
